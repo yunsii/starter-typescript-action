@@ -1,5 +1,5 @@
 import * as core from '@actions/core'
-import {wait} from './wait'
+import { wait } from './wait'
 
 async function run(): Promise<void> {
   try {
@@ -10,7 +10,9 @@ async function run(): Promise<void> {
     await wait(parseInt(ms, 10))
     core.debug(new Date().toTimeString())
 
-    core.setOutput('time', new Date().toTimeString())
+    const time = new Date().toTimeString()
+    core.info(`time: ${time}`)
+    core.setOutput('time', time)
   } catch (error) {
     if (error instanceof Error) core.setFailed(error.message)
   }

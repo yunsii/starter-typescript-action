@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/actions/typescript-action/actions"><img alt="typescript-action status" src="https://github.com/actions/typescript-action/workflows/build-test/badge.svg"></a>
+  <a href="https://github.com/yunsii/starter-typescript-action/actions"><img alt="starter-typescript-action status" src="https://github.com/yunsii/starter-typescript-action/workflows/build-test/badge.svg"></a>
 </p>
 
 # Create a JavaScript Action using TypeScript
@@ -20,17 +20,17 @@ Click the `Use this Template` and provide the new repo details for your action
 
 Install the dependencies  
 ```bash
-$ npm install
+$ pnpm install
 ```
 
 Build the typescript and package it for distribution
 ```bash
-$ npm run build && npm run package
+$ pnpm run build && pnpm run package
 ```
 
 Run the tests :heavy_check_mark:  
 ```bash
-$ npm test
+$ pnpm test
 
  PASS  ./index.test.js
   ✓ throws invalid number (3ms)
@@ -98,7 +98,7 @@ with:
   milliseconds: 1000
 ```
 
-See the [actions tab](https://github.com/actions/typescript-action/actions) for runs of this action! :rocket:
+See the [actions tab](https://github.com/yunsii/starter-typescript-action/actions) for runs of this action! :rocket:
 
 ## Usage:
 
